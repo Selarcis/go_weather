@@ -1,4 +1,4 @@
-package goweather
+package utils
 
 import (
 	"io"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func getTopDir(url string) string {
+func GetTopDir(url string) string {
 	resp, err := http.Get(url)
 	if err != nil {
 		log.Fatal("TopDir Error: " + err.Error())
